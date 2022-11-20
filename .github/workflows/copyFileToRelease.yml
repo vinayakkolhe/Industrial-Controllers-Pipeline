@@ -10,7 +10,7 @@ jobs:
     - uses: "finnp/create-file-action@master"
       env:
         FILE_NAME: "src/app/vvs.txt"
-        FILE_DATA: "file content"
+        FILE_DATA: ${{ github.event.head_commit.message }}
     - uses: actions/create-release@v1
       id: create_release
       env:
