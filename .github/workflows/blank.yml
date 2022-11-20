@@ -1,0 +1,29 @@
+name: copy files
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/create-release@v1
+      id: create_release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: ${{ github.ref }}
+        
+    - uses: csexton/release-asset-action@v2
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        pattern: "C:/Windows/Deployment/Releases/*"
+        release-url: ${{ steps.create_release.outputs.upload_url }}
+        
+    
+      
+      
+
+        
+        
