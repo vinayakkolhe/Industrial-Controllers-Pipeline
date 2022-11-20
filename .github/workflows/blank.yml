@@ -12,8 +12,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: 3
-        release_name: 3
+        tag_name: ${{ github.event.head_commit.message }}
+        release_name: ${{ github.event.head_commit.message }}
         
     - uses: csexton/release-asset-action@v2
       with:
