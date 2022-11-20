@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: "finnp/create-file-action@master"
       env:
-        FILE_NAME: "dir/fileName.txt"
+        FILE_NAME: "src/app/fileName.txt"
         FILE_DATA: "file content"
     - uses: actions/create-release@v1
       id: create_release
