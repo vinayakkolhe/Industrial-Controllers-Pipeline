@@ -1,2 +1,2 @@
 class main:
-    name = "KOlhe"
+    name = "Vinayak Kolhe"
