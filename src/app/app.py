@@ -4,11 +4,11 @@ import sys
 class pyapp:
 
     def __init__(self):
-        self.on_time = 4  #in sec
+        self.on_time = 1  #in sec
         self.off_time = 1 #in sec
 
     def main(self):
-        sys.stdout.write('\r....No' )
+        sys.stdout.write('\r....On' )
         sys.stdout.flush()
         time.sleep(self.on_time)
         
