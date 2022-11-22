@@ -5,7 +5,7 @@ class pyapp:
 
     def __init__(self):
         self.on_time = 1  #in sec
-        self.off_time = 5 #in sec
+        self.off_time = 1 #in sec
 
     def main(self):
         sys.stdout.write('\r....On' )
