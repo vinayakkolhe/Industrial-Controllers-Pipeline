@@ -12,8 +12,8 @@ class pyapp:
         
     
         self.on_time = 1  #in sec
-        self.off_time = 3 #in sec
-        self.lamp_color = "yellow"
+        self.off_time = 1 #in sec
+        self.lamp_color = "green"
 
     def main(self):
         """
