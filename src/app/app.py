@@ -13,7 +13,7 @@ class pyapp:
     
         self.on_time = 1  #in sec
         self.off_time = 1 #in sec
-        self.lamp_color = "red"
+        self.lamp_color = "green"
 
     def main(self):
         """
