@@ -3,9 +3,9 @@ import time
 
 class pyapp:
     def __init__(self):
-        self.ledNumber = 0
-        self.on_time = 5
-        self.off_time = 5
+        self.ledNumber = 1
+        self.on_time = 1
+        self.off_time = 1
         
 
     def main(self):
