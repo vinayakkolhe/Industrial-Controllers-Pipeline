@@ -11,7 +11,7 @@ class pyapp:
     def __init__(self):
         
     
-        self.on_time = 1  #in sec
+        self.on_time = 3  #in sec
         self.off_time = 1 #in sec
         self.lamp_color = "red"
 
