@@ -3,11 +3,12 @@ import time
 
 class pyapp:
     def __init__(self):
-        self.ledNumber = 0
+        self.ledNumber = 1
         self.led = str(self.ledNumber)
         self.on_time = 3
         self.off_time = 1
-        os.popen("sudo sh -c 'echo none > /sys/class/leds/led"+self.led+"/trigger'")
+        os.popen("sudo sh -c 'echo none > /sys/class/leds/led0/trigger'")
+        os.popen("sudo sh -c 'echo none > /sys/class/leds/led1/trigger'")
         
 
     def main(self):
