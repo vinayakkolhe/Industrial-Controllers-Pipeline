@@ -5,8 +5,8 @@ class pyapp:
     def __init__(self):
         self.ledNumber = 1
         self.led = str(self.ledNumber)
-        self.on_time = 2
-        self.off_time = 2
+        self.on_time = 1
+        self.off_time = 1
         os.popen("sudo sh -c 'echo none > /sys/class/leds/led0/trigger'")
         os.popen("sudo sh -c 'echo none > /sys/class/leds/led1/trigger'")
         
